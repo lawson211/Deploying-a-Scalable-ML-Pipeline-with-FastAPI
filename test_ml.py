@@ -1,4 +1,12 @@
+import os
+from numpy import load
 import pytest
+import pandas as pd
+import sklearn
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from ml.data import process_data
+from ml.model import load_model, train_model
 # TODO: add necessary import
 
 # TODO: implement the first test. Change the function name and input as needed
