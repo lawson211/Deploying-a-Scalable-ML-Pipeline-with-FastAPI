@@ -9,11 +9,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Pandas
-        uses: actions/setup-pandas@v2
-        with:
-          pandas-version: '2.2.2'
-          
+                
       - name: Checkout code
         uses: actions/checkout@v2
 
