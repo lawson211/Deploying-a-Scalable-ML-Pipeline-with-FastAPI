@@ -1,2 +1,30 @@
-            - name: Flake8 annotation
-  uses: multani/flake8-github-action@master
+- name: Python Lint Code Scanning Action
+  # You may pin to the exact commit or the version.
+  # uses: advanced-security/python-lint-code-scanning-action@e5446e09fc7d49dd4a1290193d45a41ee72a0a40
+  uses: advanced-security/python-lint-code-scanning-action@v1.1.1
+  with:
+    linter: flake8
+    # The target to lint
+    target: # default is ${{ github.workspace }}
+    # The output file
+    output: # optional, default is python_linter.sarif
+    # The version of python to use
+    python-version: # optional, default is 3.10
+    # The version of ruff to use
+    ruff-version: # optional, default is latest
+    # The version of flake8 to use
+    flake8-version: # optional, default is latest
+    # The version of pylint to use
+    pylint-version: # optional, default is latest
+    # The version of mypy to use
+    mypy-version: # optional, default is latest
+    # The version of pyright to use
+    pyright-version: # optional, default is latest
+    # The version of pytype to use
+    pytype-version: # optional, default is latest
+    # The version of fixit to use
+    fixit-version: # optional, default is latest
+    # The version of pyre to use
+    pyre-version: # optional, default is latest
+    # The version of typeshed to use
+    typeshed-version: # optional, default is main
